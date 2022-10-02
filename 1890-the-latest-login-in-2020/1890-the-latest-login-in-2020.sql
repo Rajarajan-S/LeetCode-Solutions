@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+SELECT DISTINCT user_id, MAX(time_stamp) AS last_stamp FROM Logins WHERE (time_stamp >= '2020-01-01 00:00:00.000000' AND time_stamp <= '2020-12-31 23:59:59.999999') GROUP BY user_id;
